@@ -11,7 +11,7 @@ cycles = [
     "Iota", "Kappa", "Lambda", "Mu",
     "Nu", "Xi", "Omnicron", "Pi",
     "Rho", "Sigma", "Tau", "Upsilon",
-    # "Phi", "Chi", "Psi", "Omega"
+    "Phi", "Chi", "Psi", "Omega"
 ]
 for c in cycles:
     for i in range(random.randrange(1, 10)):

@@ -6,6 +6,9 @@ settings/Hallway.py
 # Secret information
 gateway.conf
 
+# Onaeri subfolder
+Onaeri
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
