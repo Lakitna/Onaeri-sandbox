@@ -1,4 +1,4 @@
 [submodule "Onaeri"]
 	path = Onaeri
-	url = https://github.com/Lakitna/Onaeri.git
+	url = https://github.com/Lakitna/Onaeri
 	fetchRecurseSubmodules = true
