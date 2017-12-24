@@ -71,12 +71,11 @@ atexit.register(summaryBuild)
 
 while True:
     try:
+        start = time()
         lampData = lampdata.poll()
 
         # Progress all cycles and pass the current state of all lamps
-        start = time()
         onaeri.tick(lampData)
-        log.warn(str(time() - start))
 
         if onaeri.update:
             updateCounter += 1
@@ -88,6 +87,8 @@ while True:
                                                    'color',
                                                    'power']):
                         print("\t%s: %s" % (cycle.name, cycle.lamp[id]))
+
+        log.warn("Loop took %s seconds" % (time() - start))
 
         # Slow down a bit, no stress brah
         sleep(settings.Global.mainLoopDelay)
